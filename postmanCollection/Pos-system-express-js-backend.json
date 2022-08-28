@@ -1,0 +1,588 @@
+{
+  "info": {
+    "_postman_id": "c264ac31-5a05-4970-8c36-884a91779614",
+    "name": "Pos-system-express-js-backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "get all user",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "post user",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":\"U003\",\r\n    \"name\":\"Punarjeewa\",\r\n    \"username\":\"punarjeewa1@\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get user by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/users/U001",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "users",
+                "U001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete user",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/users/U001",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "users",
+                "U001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update user",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":\"U002\",\r\n    \"name\":\"Rashmitha\",\r\n    \"username\":\"rashmitha1@\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "users"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Items",
+      "item": [
+        {
+          "name": "get all item",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/items",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "items"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "post item",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\":\"I00-002\",\r\n    \"name\":\"Maliban\",\r\n    \"discription\":\"Biscket\",\r\n    \"price\":60.0,\r\n    \"qtyOnHand\":100\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/items",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "items"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get items by code",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/items/I00-001",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "items",
+                "I00-001"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete item",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/items/I00-002",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "items",
+                "I00-002"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update item",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\":\"I00-001\",\r\n    \"name\":\"Maliban\",\r\n    \"discription\":\"Biscket\",\r\n    \"price\":90.0,\r\n    \"qtyOnHand\":100\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/items",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "items"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Customer",
+      "item": [
+        {
+          "name": "get all customer",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/customer",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "customer"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "post customer",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":\"C00-002\",\r\n    \"name\":\"Namal\",\r\n    \"address\":\"Panadura\",\r\n    \"salary\":100000.00\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/customer",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "customer"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update customer",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":\"C00-001\",\r\n    \"name\":\"Amal\",\r\n    \"address\":\"Horana\",\r\n    \"salary\":10000.00\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/customer",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "customer"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete customer",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/customer/C00-001",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "customer",
+                "C00-001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get customer by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/customer/C00-002",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "customer",
+                "C00-002"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Order",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"orderId\":\"O00-002\",\r\n    \"date\":\"2022-12-10\",\r\n    \"customerId\":\"C00-002\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/orders",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all order",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/orders",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/orders/O00-001",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "orders",
+                "O00-001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"orderId\":\"O00-001\",\r\n    \"date\":\"2022-12-10\",\r\n    \"customerId\":\"C00-001\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/orders",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get order by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/orders/O00-002",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "orders",
+                "O00-002"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "OrderDetails",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"orderId\":\"O00-001\",\r\n    \"itemCode\":\"I00-001\",\r\n    \"orderQty\":40,\r\n    \"price\" : 90\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/orderDetail",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "orderDetail"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all order detail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/orderDetail",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "orderDetail"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update order detail",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/orderDetail",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "orderDetail"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete order detail",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4000/orderDetail/O00-001",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "orderDetail",
+                "O00-001"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
+
